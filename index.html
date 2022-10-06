@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/7bad2979bc.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/7bad2979bc.js" crossorigin="anonymous"></script>
+    <title>MZEEDEV</title>
+</head>
+
+<body>
+    <div class="section">
+        <div class="navbar" id="home">
+            <div class="logo">
+                <h5>MZEE<span>DEV</span></h5>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#logo">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="https://discordapp.com/users/695483176423784508">Discord</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="media">
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/profile.php?id=100032332901297" id="facebook"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://discordapp.com/users/695483176423784508" id="discord"><i
+                        class="fa-brands fa-discord"></i></a>
+                <a href="https://github.com/Khushal-cell" id="github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/hamzakk09/" id="insta"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"> <i class="fa-brands fa-youtube" id="youtube"></i></a>
+            </div>
+        </div>
+        <div class="info">
+            <div class="pics">
+                <div class="profile">
+
+                </div>
+                <div class="credits">Picture credits to <a href="#">Khattak Dev</a></div>
+            </div>
+            <div class="intro">
+                <h4 id="logo">Hello,</h4>
+                <h1>I'm <span>Hamza Shaukat</span></h1>
+                <p id="intro">Font End Web Developer. <br>Loves learning new things related to web
+                    technologies.<br>Believes in Pratice Timing Focus
+                    & all done.</p>
+                <button>Hire Me</button>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="about" id="about">About Me</div>
+            <div class="introduction">
+                <p class="int">Hi, I'm Hamza Shaukat. I'm doing BS Computer Science from <span
+                        class="highlight">International Islamic University Islambad</span>
+                    I have done my Fsc from <span class="highlight">Fazaia Inter college Kohat Cantt. </span> And my
+                    Matric from <span class="highlight">Iqra
+                        public school & college Kohat.</span><br> I'm Font End Web Developer basically working on HTML,
+                    CSS & Javascript.
+                    I Love to learn new things about webs, Daily I spent 5-6 hours just to learn new things.<br> This
+                    website may or maynot be
+                    update in future this is just to show "some" of my skills related to HTML, CSS and Javascript.
+                    Usually I learn all from
+                    <span class="highlight"> Youtube</span> because youtube is a best teacher you know? :D </br> Ill
+                    soon add my last 2 years of journey
+                    so don't forget to visit here time to time :). You may check it by clicking <a class="here"
+                        href="#">here</a>
+                </p>
+            </div>
+        </div>
+        <div class="cnc" id="contact">
+            <h6>CONTACT AREA</h6>
+        </div>
+        <div class="contact">
+            <div class="c-icon">
+                <i id="icn" class="fa-regular fa-id-badge"></i>
+            </div>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <div class="c-area">
+                    <input placeholder="Enter your name" type="text" id="name">
+                    <input placeholder="Enter your Email" type="email" id="email">
+                    <input placeholder="Your Country" type="text" id="country">
+                    <input placeholder="How can we help you?" type="text" id="help">
+                    <button class="last-btn" id="btn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    <div class="lol">
+        <h3 id="projects">Projects</h3>
+        <div class="flex">
+            <div class="project1">
+                <h5>Project 1</h5>
+                <p class="flx">All of the current projects will be upload here, As all of my projects are
+                    not on host yet.
+                </p>
+            </div>
+            <div class="project2">
+                <h5>Project 2</h5>
+                <p class="flx">All of the current projects will be upload here, As all of my projects are not on host
+                    yet</p>
+            </div>
+            <div class="project3">
+                <h5>Project 3</h5>
+                <p class="flx">All of the current projects will be upload here, As all of my projects are not on host
+                    yet</p>
+            </div>
+            <div class="project4">
+                <h5>Project 4</h5>
+                <p class="flx">All of the current projects will be upload here, As all of my projects are not on host
+                    yet<br>~mZee DEV</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken: "ebfb3349-a393-41b1-a1f6-2a82f60bf32f",
+                Host: "smtp.elasticemail.com",
+                Username: "hamzeekhattak56@gmail.com",
+                Password: "CD49051E97154B7DDE2DC1ADFF60E2877587",
+                To: 'hamzeekhattak56@gmail.com',
+                From: document.getElementById('email').value,
+                Subject: "NEW MAIL FROM WEBSITE",
+                Body: "NAME : " + document.getElementById('name').value + "<br> Country: " + document.getElementById('country').value + "<br> Message :" + document.getElementById('help').value,
+            }).then(
+                message => alert("MESSAGE SENT")
+            );
+        }
+    </script>
+</body>
+
+</html>

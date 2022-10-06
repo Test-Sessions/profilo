@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+body {
+    /* background-color: #18c2ce; */
+    background: linear-gradient(to right, #000000, #434343);
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.section {
+    background: linear-gradient(to right, #000000, #434343);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.logo {
+    padding-top: 0px;
+    padding-left: 30px;
+    font-size: 24px;
+}
+span {
+    color: salmon;
+}
+.navbar {
+    height: 60px;
+    background-color: rgb(65, 168, 134);
+    top: 0;
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+ul {
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+}
+li {
+    margin: 20px 9px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.info {
+    padding: 150px;
+    display: flex;
+    color: #fff;
+    text-align: center;
+}
+.intro {
+    margin-left: 120px;
+}
+.credits {
+    margin-top: 7px;
+}
+.credits a{
+   color: #18c2ce;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    border-radius: 100%;
+    width: 300px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.432), rgba(163, 128, 128, 0.322)),
+     url('khushal.jpg');
+    height: 300px;
+     background-position: center;
+    background-size: cover;
+    
+}
+#intro {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 27px;
+}
+button {
+    color: #fff;
+    border: solid rgba(0, 0, 0, 0.589);
+    background-color: rgba(250, 128, 114, 0.829);
+    border-radius: 13px;
+    padding: 7px 22px;
+}
+button:hover{
+    transition: 3s;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.521), rgba(209, 84, 70, 0.767));
+}
+.media {
+    border-radius: 6px;
+    position: fixed;
+    top: 9.8%;
+    right: 0;
+    height: 300px;
+    width: 50px;
+    background-color: rgba(65, 168, 134, 0.493);
+}
+.socialmedia {
+    margin-top: 30px;
+    position: absolute;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+i {
+    color: #fff;
+    margin: 10px 10px;
+}
+              /* STATRING OF MY SECTION 2 */
+
+.section2 {
+    padding-top: 60px;
+    color: #fff;
+    background: linear-gradient(to right, #000000, #434343);
+    height: 110vh;
+    width: 100%;
+}
+.here {
+    
+    color: rgba(250, 128, 114, 0.637);
+} 
+
+.about {
+    color: #fff;
+    font-family: cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+}
+.highlight {
+    color: salmon;
+}
+.int {
+    font-size: 25px;
+    padding: 0px 120px;
+    line-height: 50px;
+}
+/* CONTACT AREA ///////////////////////////////////////////////////////////////// */
+.contact {
+    background: linear-gradient(to right, #000000, #434343);
+    display: flex;
+    color: #fff;
+    height: 60vh;
+    width: 100%;
+}
+#icn {
+    padding-left: 160px;
+    color: rgba(250, 128, 114, 0.705);
+    font-size: 270px;
+}
+
+.c-area { 
+    height: 100vh;
+    /* padding-bottom: 120px; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+.cnc {
+    font-family: cursive;
+    color: #fff;
+    background: linear-gradient(to right, #000000, #434343);
+    padding: 0;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+input {
+    border: salmon solid;
+    border-radius: 8px;
+    height: 27px;
+    margin-top: 12px;
+}
+#help {
+    border-radius: 10px;
+    width: 280px;
+    height: 90px;
+}
+.lol {
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(65, 168, 134, 0.788);
+    width: 100%;
+     /* height: 250px; */
+} 
+.flex {
+display: flex;
+    flex-direction: row;  
+}
+h3 {
+    font-family: cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #fff; 
+}
+.flex > div {
+    border: solid black;
+    background-color: #f7f7f7;
+    width: 240px;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+.flx {
+    font-size: 13px;
+}
+@media (max-width: 500px) {
+    input {
+        width: 100%;
+        height: 50px;
+    }
+    .pics {
+      margin: 22px 47px;
+    }
+button {
+    margin-top: 2px;
+    color: #fff;
+    border: solid rgba(0, 0, 0, 0.589);
+    background-color: rgba(250, 128, 114, 0.829);
+    border-radius: 13px;
+    padding: 7px 10px;
+}
+    #help {
+        border-radius: 10px;
+        width: 300px;
+        height: 150px;
+    }
+    .flex {
+        align-items: center; 
+         text-align: center;
+        display: flex;
+            flex-direction: column;  
+        }
+        .flex > div {
+            border: solid black;
+            background-color: #f7f7f7;
+            width: 240px;
+            margin-top: 6px;
+            font-size: 20px;
+        }
+
+    .lol {
+        padding: 0;
+        margin-top: 70px;
+        background-color: rgba(65, 168, 134, 0.788);
+        width: 100%;
+    }
+    .contact{
+        height: 80vh;
+    }
+    .c-area { 
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .c-icon {
+        display: none;
+    }
+    .section2  {
+        height: 110vh;
+    }
+    .int {
+        padding: 0px 30px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+.credits {
+    text-align: center;
+    font-size: 17px;
+}
+.info {
+    flex-direction: column-reverse;
+    padding: 0px 0px;
+}
+h4 {
+    padding-right: 170px;
+    font-size: 12px;
+}
+h1 {
+    font-size: 20px;
+}
+.intro{
+    margin-top: 60px;
+    margin-left: 0px;
+}
+#intro {
+    font-size: 20px;
+    line-height: 26px;
+}
+    .profile {
+        border: #fff solid;
+        /* margin: 16px 95px; */
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+        background-image: url('Khushal.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    ul {
+        margin-top: 8px;
+        padding: 0;
+        font-size: 8px;
+    }
+    .logo {
+        padding: 0px 0px;
+        font-size: 18px;
+    }
+    .media{
+        height: 170px;
+        top: 12.5%;
+        width: 25px;
+    }
+    .navbar{
+     height: 50px;
+    }
+    .socialmedia {
+        margin-top: 10px;
+        position: absolute;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+       margin-left: 1px;
+    }
+    i {
+        color: #fff;
+        margin: 8px 2px;
+    }
+}
